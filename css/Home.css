@@ -1,0 +1,157 @@
+#title{
+    background-color: #05ce78;
+    color: azure;
+}
+h1{
+    font-family: "Montserrat-black 900";
+    font-weight: bold;
+    font-size: 65px;
+}
+h2{
+    font-style:"Montserrat-Bold" ;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+h3{
+    /* font-family: "Montserrat-Bold";*/
+}
+p{
+    color: #8f8f8f;
+}
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+.navbar-brand{
+    font-family: 'Kalam', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.brand{
+    text-decoration: none; 
+    font-family: 'Kalam', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.links{
+    color: #8f8f8f;
+}
+.navbar{
+    padding: 0 0 4.5rem;
+}
+.copy{
+    margin-top: 3.5%;
+}
+.navbar-item{
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+.title-image{
+    width: 60%;
+    /* transform: rotate(20deg); */
+    position: absolute;
+    right: 30%;
+}
+
+/* features section */
+#features{
+    padding: 7% 15%;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+}
+
+#feature-box{
+    text-align: center;
+    padding: 5px;
+}
+
+.icon{
+    color: #05ce78;
+    margin-bottom: 1.2rem;
+}
+.iconp{
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+.iconp:hover{
+    color: #e6e6e6;
+    margin-bottom: 1.2rem;
+}
+.icon:hover{
+    color: #009152;
+}
+
+/* testimonials */
+#testimonials{
+    text-align: center;
+    background-color: #2d9467;
+    color: azure;
+}
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* press */
+#press{
+    background-color: #2d9467 ;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing section */
+#pricing{
+    padding: 100px;
+
+}
+.pricing-col{
+    padding: 3% 2%;
+    text-align: center;
+}
+
+
+@media (max-width: 1028px){
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+    #title{
+        text-align: center;
+    }
+}
+
+/* Call to action section */
+
+#cta{
+    background-color: #05ce78;
+    text-align: center;
+    padding: 10%;
+}
+.cta-heading{
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    color: white;
+}
+
+/* Footer section */
+
+#footer{
+    text-align: center;
+    padding: 7% 15%;
+}

@@ -5,37 +5,38 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Register</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/Signup.css">
+      <link rel="stylesheet" href="css/Register.css">
    </head>
    <body class="text-center">
-
-
-
-      <form class="form-signin">
-         <img class="mb-4" src="download.jpeg" alt="" width="72" height="72">
+      <form action="/Register" method="POST" class="form-signin">
+         <img class="mb-4" src="images/download.jpeg" alt="" width="72" height="72">
          <h1 class="h3 mb-3 font-weight-normal">Register</h1>
 
         <!-- fname -->
         <label class="sr-only">First name</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="First name" required autofocus>
+        <input name="fname" type="text" class="form-control" placeholder="First name" required autofocus>
          
         <!-- lname -->
         <label class="sr-only">Last name</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Last name" required autofocus>
+        <input name="lname" type="text" class="form-control" placeholder="Last name" required autofocus>
         
-
         <!-- email -->
         <label class="sr-only">Email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
           
-        <!-- new pass -->
-        <label class="sr-only">Email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="New Password" required autofocus>
-       
         <!-- pass -->
+        <label class="sr-only">Password</label>
+        <input name="pass" type="password" id="inputEmail" class="form-control" placeholder="New Password" required autofocus>
+       
+        <!-- new pass -->
         <label class="sr-only">New Password</label>
-        <input type="password" id="inputEmail" class="form-control" placeholder="confirm Password" required autofocus>
+        <input name="newpass" type="password" id="inputEmail" class="form-control" placeholder="confirm Password" required autofocus>
+
+         <!-- fname -->
+         <label class="sr-only">Type of user</label>
+         <input name="typeOfUser" type="text" class="form-control" placeholder="you are?" required autofocus>
          
+        <br>
 
          <div class="checkbox mb-3">
             <label>

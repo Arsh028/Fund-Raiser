@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 #title{
     background-color: #05ce78;
     color: azure;

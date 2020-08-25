@@ -4,8 +4,17 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Register</title>
+
+      <!-- bootstrap css link -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <!-- custom made css link -->
       <link rel="stylesheet" href="css/Register.css">
+
+
+      <!-- JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
    </head>
    <body class="text-center">
       <form action="/Register" method="POST" class="form-signin">
@@ -32,15 +41,30 @@
         <label class="sr-only">New Password</label>
         <input name="newpass" type="password" id="inputEmail" class="form-control" placeholder="confirm Password" required autofocus>
 
-         <!-- fname -->
-         <label class="sr-only">Type of user</label>
-         <input name="typeOfUser" type="text" class="form-control" placeholder="you are?" required autofocus>
-         
+         <!-- type of user (seeker/investor) (boot) -->
+         <!-- <div class="dropdown">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              You are ?
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <select name="typeOfUser" id="">
+                  <option class="dropdown-item" value="Seeker" selected>Seeker</option>
+                  <option class="dropdown-item" value="Investor">Investor</option>
+               </select>
+            </div>
+          </div> -->
+          <br>
+          <label>Your are ?</label>
+          <select name="typeOfUser">
+            <option class="dropdown-item form-control" value="Seeker" selected>a Seeker</option>
+            <option class="dropdown-item form-control" value="Investor">an Investor</option>
+         </select>
+        <br>
         <br>
 
          <div class="checkbox mb-3">
             <label>
-            <input type="checkbox" value="remember-me"> Remember me
+            <input type="checkbox" value="remember-me">Remember me
             </label>
          </div>
          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>

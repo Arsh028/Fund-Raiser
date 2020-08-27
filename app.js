@@ -26,8 +26,22 @@ const UserSchema = new mongoose.Schema(
     }
 );
 
+const PostSchema = new mongoose.Schema(
+    {
+        title : String,
+        description : String,
+        Seeking_money : Number,
+        Industry_of_business : String,
+        Share : String
+
+    }
+);
+
 //create collection name User (table)
 var User = new mongoose.model("User", UserSchema);
+//create collection name Post (table)
+var Post = new mongoose.model("Post", PostSchema);
+
 
 // render home page
 app.get("/",(req,res)=>res.render("pages/Home"));
@@ -111,4 +125,38 @@ app.post("/Login",function(req,res){
 
 //============================LOGIN PAGE END==============================
 
+
+
+//============================COMPOSE PAGE=============================
+
+app.get("/compose",(req,res)=>res.render("pages/Compose"));
+
+app.post("/compose",function(req,res){
+
+    const newPost = new Post(
+        {
+            title : req.body.title,
+            description : req.body.description,
+            Seeking_money : req.body.Seeking_money,
+            Industry_of_business : req.body.Industry_of_business,
+            Share : req.body.Share
+        }
+    );
+    newPost.save(function(err){
+        if(err){
+            console.log("There was an error "+err);
+            res.redirect("/compose");
+        }
+        else
+        {
+            //TODO -- make a conformation alert 
+            console.log(req.body.title + " saved");
+            res.redirect("/");
+        }
+    });
+    
+});
+
+
+//============================COMPOSE PAGE END=============================
 app.listen(3000,() => console.log("server started on port 3000"));
